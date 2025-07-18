@@ -44,18 +44,10 @@ def parse_xlsx_to_markdown(input_dir="data/cong-nghiep", output_dir="output"):
 
 def main():
     input_directory = "data/cong-nghiep"
-    output_directory = "output"
+    output_directory = "output/cong-nghiep"
     
     print("XLSX to Markdown Parser using Docling")
     print("=" * 40)
-    
-    try:
-        from docling import __version__
-        print(f"Using docling version: {__version__}")
-    except ImportError:
-        print("Error: docling is not installed")
-        print("Install it with: pip install docling")
-        return
     
     parse_xlsx_to_markdown(input_directory, output_directory)
 
